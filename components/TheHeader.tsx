@@ -1,9 +1,16 @@
 import Link from "next/link";
+import { Navigation } from "./Navigation";
+
+const navItems = [
+  { label: "Home", href: "/" },
+  { label: "Blog", href: "/blog" },
+  { label: "About", href: "/about" },
+];
 
 const TheHeader = () => {
   return (
     <header className="items-center justify-between hidden w-full md:flex md:w-auto md:order-1">
-      <Link
+      {/* <Link
         href="/"
         className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
       >
@@ -20,7 +27,8 @@ const TheHeader = () => {
         className="block py-2 pl-3 pr-4 text-white bg-blue-700 rounded md:bg-transparent md:text-blue-700 md:p-0 md:dark:text-blue-500"
       >
         About
-      </Link>
+      </Link> */}
+      <Navigation NavLinks={navItems} />
     </header>
   );
 };
