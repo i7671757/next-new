@@ -1,9 +1,14 @@
 import Link from "next/link";
 
-type Props = {
-  props: any[];
+type Post = {
+  id: number;
+  title: string;
+  // Добавьте другие свойства вашей записи (поста) сюда
 };
 
+type Props = {
+  posts: Post[];
+};
 const Posts = ({ posts }: Props) => {
   return (
     <ul>

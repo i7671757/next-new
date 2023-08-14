@@ -2,7 +2,6 @@
 import { PostSearch } from "@/components/PostSearch";
 import { Posts } from "@/components/Posts";
 import { Metadata } from "next";
-
 import { useEffect, useState } from "react";
 
 async function getData() {
