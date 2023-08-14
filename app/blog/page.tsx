@@ -15,7 +15,7 @@ async function getData() {
   return response.json();
 }
 
-export const metadata: Metadata = {
+const metadata: Metadata = {
   title: "Blog | Next App",
 };
 
