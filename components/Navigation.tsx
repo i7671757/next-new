@@ -25,7 +25,7 @@ const Navigation = ({ NavLinks }: Props) => {
           <Link
             key={link.label}
             href={link.href}
-            className={isActive ? "active:bg-blue-600" : ""}
+            className="menu menu-horizontal bg-base-200 lg:menu-horizontal rounded-box active"
           >
             {link.label}
           </Link>
